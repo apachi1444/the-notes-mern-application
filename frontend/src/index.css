@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: sans-serif;
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f56,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f58,
+    #f478ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body,
+html,
+.App,
+#root,
+.outer {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.outer .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.outer h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 200;
+  transform: translateY(-0.05em);
+  margin-left: 4%;
+}
+.custom-control-input {
+  transform: translateY(-0.69em);
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 15px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+  text-decoration: none;
+}
+.forgot-password {
+  transform: translateY(-1.1em);
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+}
+.forgot-password a:hover {
+  color: red;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+.button {
+  transform: translateY(-1.2em);
+  margin-left: 4.3%;
+  width: 90%;
+}
+.button:hover {
+  background: green;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  height: 3em;
+  text-align: center;
+  margin-left: 4%;
+  width: 24rem;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+.label {
+  position: absolute;
+  top: 50%;
+  left: 0.65rem;
+  transform: translateY(-50%);
+  color: grey;
+  padding: 0.25rem 0.5rem;
+  pointer-events: none;
+  background: white;
+  font-size: 0.95em;
+  transform: translateY(-2.4rem);
+}
+input {
+  height: inherit;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  outline: none;
+  background: transparent;
+  color: black;
+  text-indent: 1rem;
+  transition: all 0.35s;
+}
+input:focus {
+  border-color: red;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  font-size: 1.3em;
+  transform: translateY(-0.45em);
+  cursor: pointer;
+}
+.button_social_google {
+  background: red;
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-0.5em);
+  margin-left: 4%;
+  width: 90%;
+}
+
+.button_social_fb {
+  background: blue;
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 4%;
+  width: 90%;
+  margin-bottom: 1em;
+}
+.button_social_fb:hover,
+.button_social_google:hover {
+  background: green;
+  color: white;
+}
+.create-account:hover {
+  color: green;
+  cursor: pointer;
+  text-decoration: none;
+}
+.create-account {
+  text-align: center;
+  color: #167bff;
+  font-weight: 600;
+  transform: translateY(1.5em);
+  margin-left: 20%;
+  margin-top: 10%;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 95px;
+}
+.subtitle {
+  font-size: 25px;
+  padding-top: 10px;
+}
+.intro-text {
+  width: 100%;
+  text-align: center;
+}
+.main {
+  min-height: 93vh;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+.buttonContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landingbutton {
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  border-radius: 20px;
+  color: green;
+  border: 2px solid black;
+}
+
+@media only screen and (min-width: 1200px) {
+  .buttonContainer {
+    padding: 0 200px;
+  }
+  .title {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 60px;
+  }
+  .landingbutton {
+    width: 150px;
+    height: 50px;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+
+.mainback {
+  min-height: 93vh;
+  display: flex;
+  padding: 10px 0;
+}
+.page {
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  font-size: 60px;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-family: "Work Sans", sans-serif;
+  padding: 5px 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.profileContainer {
+  display: flex;
+  margin: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .profileContainer {
+    flex-direction: column-reverse;
+  }
+}
+.edit-attribute {
+  color: white;
+}
+.account-settings .user-profile {
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+.account-settings .user-profile .user-avatar {
+  margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+  margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #9fa8b9;
+}
+.account-settings .about {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+.account-settings .about h5 {
+  margin: 0 0 15px 0;
+  color: #007ae1;
+}
+.account-settings .about p {
+  font-size: 0.825rem;
+}
+.form-control {
+  border: 1px solid #cfd1d8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 0.825rem;
+  background: #ffffff;
+  color: #2e323c;
+  margin: 2%;
+}
+
+.card {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 1rem;
+}
